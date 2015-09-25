@@ -1,0 +1,15 @@
+object Form1: TForm1
+  Left = 1188
+  Height = 282
+  Top = 210
+  Width = 210
+  Align = alTop
+  AutoSize = True
+  Caption = 'Калькулятор'
+  Constraints.MaxHeight = 282
+  Constraints.MaxWidth = 210
+  Constraints.MinHeight = 282
+  Constraints.MinWidth = 210
+  KeyPreview = True
+  LCLVersion = '1.2.6.0'
+end

@@ -1,0 +1,438 @@
+object Form1: TForm1
+  Left = 1247
+  Height = 282
+  Top = 260
+  Width = 210
+  Caption = 'Калькулятор'
+  ClientHeight = 282
+  ClientWidth = 210
+  Constraints.MaxHeight = 282
+  Constraints.MaxWidth = 210
+  Constraints.MinHeight = 282
+  Constraints.MinWidth = 210
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.4.2.0'
+  Visible = True
+  object Button1: TButton
+    Left = 8
+    Height = 28
+    Top = 212
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '1'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 48
+    Height = 28
+    Top = 212
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '2'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 87
+    Height = 28
+    Top = 212
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '3'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 8
+    Height = 28
+    Top = 176
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '4'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 48
+    Height = 28
+    Top = 176
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '5'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 87
+    Height = 28
+    Top = 176
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '6'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 8
+    Height = 28
+    Top = 144
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '7'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 48
+    Height = 28
+    Top = 144
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '8'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 87
+    Height = 28
+    Top = 144
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '9'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Output1: TEdit
+    Left = 8
+    Height = 52
+    Top = 20
+    Width = 192
+    AutoSize = False
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentBidiMode = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 9
+  end
+  object Button0: TButton
+    Left = 8
+    Height = 28
+    Top = 248
+    Width = 71
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '0'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonClick
+    ParentFont = False
+    TabOrder = 10
+  end
+  object ButtonC: TButton
+    Left = 87
+    Height = 28
+    Top = 112
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'C'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonCClick
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Buttonpm: TButton
+    Left = 127
+    Height = 28
+    Top = 112
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+-'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonpmClick
+    ParentFont = False
+    TabOrder = 12
+  end
+  object Bsqrt: TButton
+    Left = 167
+    Height = 28
+    Top = 112
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'sqrt'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = BsqrtClick
+    ParentFont = False
+    TabOrder = 13
+  end
+  object point: TButton
+    Left = 87
+    Height = 28
+    Top = 248
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = ','
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = pointClick
+    ParentFont = False
+    TabOrder = 14
+  end
+  object minus: TButton
+    Left = 127
+    Height = 28
+    Top = 212
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = minusClick
+    ParentFont = False
+    TabOrder = 15
+  end
+  object plus: TButton
+    Left = 127
+    Height = 28
+    Top = 248
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = plusClick
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Output: TEdit
+    Left = 12
+    Height = 28
+    Top = 40
+    Width = 184
+    AutoSize = False
+    BorderStyle = bsNone
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 15
+    ParentBidiMode = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 17
+    Text = '0'
+  end
+  object negat: TButton
+    Left = 167
+    Height = 28
+    Top = 176
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '1/x'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = negatClick
+    ParentFont = False
+    TabOrder = 18
+  end
+  object BRavno: TButton
+    Left = 167
+    Height = 64
+    Top = 212
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '='
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = BRavnoClick
+    ParentFont = False
+    TabOrder = 19
+  end
+  object Button10: TButton
+    Left = 2160
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Button10'
+    TabOrder = 20
+  end
+  object ButtonMul: TButton
+    Left = 127
+    Height = 28
+    Top = 176
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '*'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonMulClick
+    ParentFont = False
+    TabOrder = 21
+  end
+  object ButtonShare: TButton
+    Left = 127
+    Height = 28
+    Top = 144
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '/'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonShareClick
+    ParentFont = False
+    TabOrder = 22
+  end
+  object ButtonCE: TButton
+    Left = 48
+    Height = 28
+    Top = 112
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'CE'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonCEClick
+    ParentFont = False
+    TabOrder = 23
+  end
+  object ButtonBS: TButton
+    Left = 8
+    Height = 28
+    Top = 112
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'BS'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonBSClick
+    ParentFont = False
+    TabOrder = 24
+  end
+  object Memory: TLabel
+    Left = 184
+    Height = 20
+    Top = 4
+    Width = 16
+    AutoSize = False
+    ParentColor = False
+  end
+  object ButtonPer: TButton
+    Left = 167
+    Height = 28
+    Top = 144
+    Width = 33
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '%'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonPerClick
+    ParentFont = False
+    TabOrder = 25
+  end
+end
